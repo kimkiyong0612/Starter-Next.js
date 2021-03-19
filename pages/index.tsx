@@ -1,17 +1,16 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+
+import Layout from '../components/layout'
 
 export default function Home() {
   return (
-    <div>
-    <Head>
-      <title>ohomenokotoba</title>
-      <link rel="icon" href=""/>
-    </Head>
-    <main className={styles.container}>
-      <h1>Hello Next.js</h1>
-      <p className="text-3xl text-red-500 font-bold">Hello Tailwind</p>
-    </main>
-    </div>
+    <Layout home title="ohomenokotoba">
+     <div>
+       <h1>Hello Next.js</h1>
+       <p className="text-sm text-red-500 font-bold">Hello Tailwind</p>
+     </div>
+    </Layout>
   )
 }
